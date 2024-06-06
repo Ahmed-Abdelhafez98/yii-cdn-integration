@@ -1,4 +1,4 @@
-# Yii CDN Integration Documentation
+# Yii CDN Integration
 
 ## Overview
 
