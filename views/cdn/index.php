@@ -1,5 +1,5 @@
 <?php
-$this->title = 'CDN Setup Documentation';
+$this->title = 'CDN Page';
 ?>
 
 <div class="header">
