@@ -10,6 +10,11 @@ services:
       - "8080:80"
     networks:
       - yii-net
+    environment:
+      - APACHE_DOCUMENT_ROOT=/var/www/html/web
+    command: >
+        sh -c "composer install &&
+               apache2-foreground"
 
   reverse-proxy:
     image: nginx:latest
