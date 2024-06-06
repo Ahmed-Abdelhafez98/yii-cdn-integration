@@ -1,0 +1,27 @@
+version: '3.8'
+
+services:
+  app:
+    image: yiisoftware/yii2-php:8.2-apache
+    container_name: yii_app
+    volumes:
+      - .:/app
+    ports:
+      - "8080:80"
+    networks:
+      - yii-net
+
+  reverse-proxy:
+    image: nginx:latest
+    container_name: nginx_proxy
+    volumes:
+      - ./nginx.conf:/etc/nginx/nginx.conf
+      - ./cache:/var/cache/nginx
+    ports:
+      - "8081:80"
+    networks:
+      - yii-net
+
+networks:
+  yii-net:
+    driver: bridge
