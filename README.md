@@ -58,7 +58,3 @@ Using a CDN to serve static assets provides several benefits:
 - **Reduced Load on Origin Server:** Offloading asset delivery to the CDN reduces the load on the application server, improving overall performance. This allows the server to focus on processing dynamic requests and reduces the risk of server overload during high traffic periods.
 - **Better Scalability:** CDNs are designed to handle high traffic volumes efficiently, ensuring your application can scale smoothly. As your application grows and attracts more users, the CDN can handle the increased load without requiring significant changes to your infrastructure.
 - **Enhanced Security:** CDNs provide additional security features, such as DDoS protection and secure delivery of assets. This helps protect your application from various types of cyber threats and ensures the integrity and availability of your content.
-
-## Created by
-
-Ahmed Emad
